@@ -10,7 +10,9 @@ let numbers = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0]
 let lowNums = numbers.find { $0 < 5 }
 
 
-let digits = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+let digits = [ "zero", "one", "two", "three", "four", "five", 
+               "six", "seven", "eight", "nine" ]
+               
 let shortDigits = digits.find { digit, index in digit.length < index }
 
 
@@ -70,7 +72,9 @@ let scoreRecordsDict = scoreRecords.toDictionary {
     (x:(Name:String,Score:Int)) in x.Name
 }
 
-let strings = [ "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" ]
+let strings = [ "zero", "one", "two", "three", "four", "five", 
+                "six", "seven", "eight", "nine" ]
+
 let startsWithO = strings.firstWhere { $0.charAt(0) == "o" }
 
 let numbers:Int[] = []
