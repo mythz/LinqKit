@@ -11,7 +11,7 @@ class ArrayTests: TestsBase {
     func testEach() {
         var times = 0
         [1,2,3].each { n in times++; return }
-        times == 3
+        XCTAssert(times == 3)
     }
     
     func testFind() {
