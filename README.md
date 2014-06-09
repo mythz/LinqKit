@@ -5,7 +5,7 @@ LINQ-like extensions for Swift
 
 Originally extracted from [101 LINQ Samples in Swift](https://github.com/mythz/swift-linq-examples), LinqKit gives Swift more functional powers making working with models and collections more enjoyable.
 
-```go
+```rust
 let numbers = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0]
 let lowNums = numbers.find { $0 < 5 }
 
